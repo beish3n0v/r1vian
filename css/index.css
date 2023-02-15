@@ -1,0 +1,749 @@
+@font-face{
+	font-family: "Roboto";
+	src: url('../fonts/Roboto-Regular.eot');
+	src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* global-styles */
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+.container{
+  max-width: 1200px;
+  padding: 0px 20px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+/* ----- */
+
+
+/* common-blocks */
+/* ----- */
+
+/* header */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: rgba(235, 194, 136, 1);
+}
+.header__container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header__content{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-image{
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+}
+.dropdown-toggle{
+  display: none;
+}
+.dropdown-label{
+  display: none;
+}
+.menu__list{
+  display: flex;
+  gap: 20px 30px;  
+}
+.menu__link{
+  font-size: 17px;
+  color: black;
+}
+.menu__link:hover{
+  color: rgba(255, 255, 255, 1);
+}
+/* ----- */
+
+.main{
+  flex: 1 1 auto;
+}
+
+/* intro */
+.intro{
+  width: 100%;
+}
+.intro-img-wrapper{
+  position: relative;
+  padding-bottom: 50%;
+}
+.intro-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* slogan */
+.slogan{
+  width: 100%;
+  background: rgba(249, 242, 232, 1);
+}
+.slogan__container{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.slogan__content{
+  display: flex;
+  justify-content: center;
+  gap: 20px 97px;
+}
+.slogan__title{
+  font-size: 35px;
+  line-height: 40px;
+  color: crimson;  
+}
+.slogan__info{
+  max-width: 445px;
+  font-size: 22px;
+  line-height: 24px;
+}
+/* cars-catalog */
+.cars{
+  width: 100%;
+  margin-bottom: 40px;
+  background: rgba(249, 242, 232, 1);
+}
+.cars__container{
+  padding-bottom: 40px;
+}
+.cars__content{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px 30px;
+}
+.cars__card{
+  position: relative; 
+  flex: 0 1 550px;
+  padding-bottom: 32%;
+  background: rgba(233, 223, 202, 1);
+}
+.cars__card img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cars__card-info{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+.cars__model{
+  font-size: 18px;
+}
+.cars__card-buttons{
+  margin: 0 0 0 auto;
+}
+.button{
+  display: inline-block;  
+  font-size: 16px;
+  line-height: 18px;
+}
+.card-button_white{
+  margin-right: 8px;
+  padding: 10px 29px;
+  border: 1px solid black;
+  color: black;
+  background: transparent;
+}
+.card-button_black{
+  padding: 10px 14px;
+  border: 1px solid black;
+  color: rgba(255, 255, 255, 1);
+  background: black;
+} 
+.card-button_white:hover{
+  color: rgba(255, 255, 255, 1);
+  background: black;
+}
+.card-button_black:hover{
+  color: black;
+  background: transparent;
+}
+.button:focus{
+  box-shadow: 1px 1px 3px black;
+}
+
+/* prom-video */
+.prom-video{
+  width: 100%;
+  background: url(../video/preview-image.png);
+}
+.prom-video__container{
+  padding-top: 109px;  
+  padding-bottom: 136px;
+}
+.prom-video__title{
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 1);
+}
+.video{
+  position: relative;
+  padding-bottom: 48.8%;
+}
+.video video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* preview */
+.preview{
+  width: 100%;
+}
+.preview-image{
+  position: relative;
+  padding-bottom: 52.7%;
+}
+.preview-image img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* news */
+.news{
+  width: 100%;
+}
+.news__content{
+  display: flex;
+  justify-content: space-between;
+}
+.news-image{
+  position: relative;
+  flex: 0 1 50%;
+  padding-bottom: 47%; 
+}
+.news-image img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news__info{
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 70px;
+  padding: 116px 20px 120px 128px;
+  background: rgba(249, 242, 232, 1);
+}
+.news__title{
+  font-size: 44px;
+  line-height: 48px;
+  color: crimson;
+}
+.news__link{
+  position: relative;
+  font-size: 21px;
+  line-height: 30px;
+  color: black;
+}
+.news__link_1:before,
+.news__link_2:before,
+.news__link_3:before{
+  position: absolute;
+  top: -15px;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+}
+.news__link_1:before{
+  content: '01';
+}
+.news__link_2:before{
+  content: '02';
+}
+.news__link_3:before{
+  content: '03';
+}
+.news__link:hover{
+  text-decoration: underline;
+}
+.news__button{
+  padding: 18px 35px;
+  color: rgba(255, 255, 255, 1);
+  background: black;
+}
+.news__button:hover{
+  color: black;
+  background: transparent;
+}
+
+/* cta */
+.cta{
+  width: 100%;
+  background: rgba(235, 194, 136, 1);
+}
+.cta__container{
+  padding-top: 50px;
+  padding-bottom: 46px;
+}
+.email-form{
+  display: flex; 
+  align-items: center;
+  gap: 30px; 
+}
+.email-form__title{
+  max-width: 370px;
+  font-size: 24px;
+  line-height: 32px;
+}
+.email-form__input{
+  width: 200px;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 20px;
+  background: rgba(233, 223, 202, 1);
+}
+.email-form__input:focus{
+  box-shadow: 1px 1px 5px black;
+}
+.email-form__button{
+  background: transparent;
+}
+
+/* footer */
+.footer{
+  width: 100%;
+  background: rgba(161, 88, 66, 1);
+}
+.footer__container{
+  padding-top: 50px;
+  padding-bottom: 57px;
+}
+.footer__content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.footer-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav__list ul{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.footer__link{
+  font-size: 22px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 1);
+}
+.footer__link:hover{
+  color: black;
+}
+.footer__socials{
+  display: flex;
+  column-gap: 30px;
+}
+.politics__btn{
+  display: none;
+}
+.politics ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 1200px){
+  /* slogan */
+  .slogan__container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  /* news */
+  .news__info{
+    padding: 90px 30px 100px 100px;
+  }
+  .news__title{
+    font-size: 38px;  
+  }
+
+  /* footer */
+  .footer__container{
+    max-width: 960px;
+    padding-left: 20px;
+    padding-right: 20px; 
+  }
+  .footer__link{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 990px){
+  /* cars */
+  .card-button_white{
+    padding: 8px 10px;
+  }
+  .card-button_black{
+    padding: 9px 5px;
+  }
+
+  /* news */
+  .news-image{
+    padding-bottom: 40%;
+  }
+  .news__info{
+    padding: 70px 0px 80px 70px;
+    gap: 50px;
+  }
+
+  /* cta */
+  .email-form__title{
+    max-width: 370px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .email-form__input{
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  /* slogan */
+  .slogan__container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .slogan__content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .slogan__title, .slogan__info{
+    text-align: center;
+  }
+  .slogan__title{
+    font-size: 25px;
+  }
+  .slogan__info{
+    max-width: 400px;
+  }
+
+  /* cars-catalog */
+  .cars__content{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cars__card{
+    flex: 0 1 500px;
+    padding-bottom: 50%;
+  }
+  .card-button_white{
+    padding: 8px 15px;
+  }
+
+  /* prom-video */
+  .prom-video__container{
+    padding-top: 89px;
+    padding-bottom: 100px;
+  } 
+  .prom-video__title{
+    font-size: 22px;
+  }
+
+  /* news */
+  .news__info{
+    padding: 20px 40px;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .news__title {
+    font-size: 34px;
+  }  
+  .news__link{
+    font-size: 17px;
+  }
+  .news__button{
+    padding: 15px 28px;
+  }
+
+  /* cta */
+  .cta__container{
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+  .email-form{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .email-form__title{
+    max-width: 370px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .email-form__input{
+    width: 170px;
+  }
+
+  /* footer */
+  .footer__container{
+    max-width: 600px;
+    padding-bottom: 35px;
+  }
+  .footer__link{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  /* slogan */
+  .slogan__container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  /* prom-video */ 
+  .prom-video__container{
+    padding-top: 69px;
+    padding-bottom: 80px;
+  } 
+  .prom-video__title{
+    font-size: 18px;
+  }
+  
+  /* news */
+  .news__title{
+    font-size: 27px;
+  }
+  .news__link{
+    font-size: 15px;
+  }
+
+  /* footer */
+  .footer__container{
+    max-width: 500px;
+    padding-bottom: 50px;
+  }
+  .footer-nav__list{
+    position: relative;
+    width: 20%; 
+    height: 40px; 
+  }
+  .footer-nav__list button{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background: wheat;
+  }
+  .footer-nav__list ul{
+    position: absolute;
+    top: 105%;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100px;
+    background: rgba(235, 194, 136, 1);
+  }
+  .footer-nav__list:hover ul{
+    display: block;
+    display: flex;
+    row-gap: 10px ;
+  }
+
+
+  .politics{
+    position: relative;
+  }
+  .politics ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    display: none;
+    background: rgba(235, 194, 136, 1);
+  }
+  .politics__btn{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 20px;
+    background: wheat;
+  }
+  .politics:hover ul{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+  } 
+  /* header */
+  .header__container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .dropdown-toggle{
+    position: absolute;
+    right: 0;
+    display: block;
+    opacity: 0;
+  }
+  .dropdown-label{
+    position: relative;
+    z-index: 1;
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    background: tan;
+  }
+  .dropdown-label span{
+    display: block;
+    width: 30px;
+    height: 4px;
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 1);
+  }
+  .nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    transition: 0.25s;
+    background: tan;
+  }
+  .menu__list{
+    flex-direction: column;
+    gap: 20px;
+    padding: 90px 20px 50px 40px;
+    text-align: right;
+    box-shadow: 3px 3px 2px black;
+  }
+  .menu__link{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+  }
+  .menu__link:hover{
+    color: black;
+  }
+  .dropdown-toggle:checked ~ .nav{
+    display: block;
+  }
+  .dropdown-toggle:checked ~ .dropdown-label span:nth-child(1){
+    position: absolute;  
+    transform: rotate(0deg);
+  }
+  .dropdown-toggle:checked ~ .dropdown-label span:nth-child(2){
+    position: absolute;
+    transform: rotate(90deg);
+  }
+  .dropdown-toggle:checked ~ .dropdown-label{
+    transform: rotate(45deg);
+  }
+
+  /* intro */
+  .intro-img-wrapper{
+    padding-bottom: 55%;
+  }
+  .intro-image img{
+    object-fit: contain;
+  }
+
+  /* slogan */
+  .slogan__container{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .slogan__content{
+    row-gap: 10px;
+  }
+  .slogan__title{
+    font-size: 23px;
+  }
+  .slogan__info{
+    font-size: 15px;
+  }
+
+  /* cars-catalog */
+  .cars__container{
+    padding: 0px 20px;
+  }
+  .cars__card-info{
+    padding: 2%;
+  }
+  .card-button_white{
+    padding: 7px 8px;
+    margin-right: 0;
+    font-size: 18px;
+  }
+  .card-button_black{
+    display: none;
+  }
+
+  /* prom-video */
+  .prom-video__container{
+    padding-top: 49px;
+    padding-bottom: 60px;
+  }
+  .prom-video__title{
+    text-align: center;
+  }
+
+  /* news */
+  .news__content{
+    flex-direction: column;
+  }
+  .news__title{
+    font-size: 23px;
+  }
+  .news__button{
+    padding: 8px 13px;
+  }
+  .news-image{
+    display: none;
+  }
+
+  /* footer */
+  .footer__link{
+    font-size: 16px;
+  }
+}
